@@ -1258,7 +1258,7 @@ public class MaterialEditText extends AppCompatEditText {
 
   private ObjectAnimator getLabelFocusAnimator() {
     if (labelFocusAnimator == null) {
-      labelFocusAnimator = ObjectAnimator.ofFloat(this, "focusFraction", 0f, 1f);
+      labelFocusAnimator = ObjectAnimator.ofFloat(this, "focusFraction", 0.8f, 1f);
     }
     return labelFocusAnimator;
   }
