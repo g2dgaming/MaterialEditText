@@ -226,7 +226,7 @@ public class MaterialEditText extends AppCompatEditText {
   /**
    * the floating label's focusFraction
    */
-  private float focusFraction;
+  private float focusFraction=1.0f;
 
   /**
    * The font used for the accent texts (floating label, error/helper text, character counter, etc.)
