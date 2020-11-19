@@ -1250,7 +1250,7 @@ public class MaterialEditText extends AppCompatEditText {
 
   private ObjectAnimator getLabelAnimator() {
     if (labelAnimator == null) {
-      labelAnimator = ObjectAnimator.ofFloat(this, "floatingLabelFraction", 0.8f, 1f);
+      labelAnimator = ObjectAnimator.ofFloat(this, "floatingLabelFraction", focusFraction, 0f);
     }
     labelAnimator.setDuration(floatingLabelAnimating ? 300 : 0);
     return labelAnimator;
@@ -1258,7 +1258,7 @@ public class MaterialEditText extends AppCompatEditText {
 
   private ObjectAnimator getLabelFocusAnimator() {
     if (labelFocusAnimator == null) {
-      labelFocusAnimator = ObjectAnimator.ofFloat(this, "focusFraction", 0.8f, 1f);
+      labelFocusAnimator = ObjectAnimator.ofFloat(this, "focusFraction", focusFraction, 0f);
     }
     return labelFocusAnimator;
   }
